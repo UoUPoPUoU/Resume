@@ -422,10 +422,10 @@ body.act{
 	    overflow: hidden;
 	    z-index: 100;
 	    background: rgba(0, 0, 0, 0.9);
-	    transition: all .5s ease-in;
-	    -moz-transition: all .5s ease-in; 
-		-webkit-transition: all .5s ease-in; 
-		-o-transition: all .5s ease-in; 
+	    transition: all .4s ease-in;
+	    -moz-transition: all .4s ease-in; 
+		-webkit-transition: all .4s ease-in; 
+		-o-transition: all .4s ease-in; 
 	}
 	.nav-box.act{
 		left: 0;
