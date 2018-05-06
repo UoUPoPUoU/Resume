@@ -70,19 +70,13 @@ body.act{
 	padding-left: 2em;
 	line-height: 40px;
 	margin-bottom: 15px;
-}
-.re-left li:after{
-	content: "";
-	position: absolute;
-	width: 0;
-	height:100%;
-	left: 0;
-	top: 0;
-	background-color: rgba(123, 185, 166, 0.15);
-	transition: width .5s;
-	-moz-transition: width .5s; 
-	-webkit-transition: width .5s; 
-	-o-transition: width .5s; 
+	background-image: linear-gradient( to right, transparent 50%, rgba(123, 185, 166,0.15) 50% );
+	background-image: -webkit-linear-gradient( to right, transparent 50%, rgba(123, 185, 166,0.15) 50% );
+	background-size: 200%;
+	transition:all .5s;
+	-moz-transition:all .5s; 
+	-webkit-transition:all .5s; 
+	-o-transition:all .5s; 
 }
 .nav span{
 	font-size:14px;
@@ -91,8 +85,8 @@ body.act{
 .nav li:hover,.nav .act{
  	color: #86bdaf;
 }
-.nav li:hover:after{
-	width: 100%;
+.nav li:hover{
+	background-position: -100%;
 }
 .re-left>h3,
 .re-left ul{
