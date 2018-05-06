@@ -20,6 +20,19 @@ body{
 body.act{
 	overflow: hidden;
 }
+.err{
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	font-size: 18px;
+	text-align: center;
+	background-color: #FFA500;
+
+}
 .clearFix:before,
 .clearFix:after{
 	content: "";
@@ -40,6 +53,7 @@ body.act{
 	top: 0;
 	background-image: -webkit-linear-gradient(to bottom, #dcd1e6, #d9cde6, #d5c8e6, #d1c4e7, #ccc0e7);
 	background-image: linear-gradient(to bottom, #dcd1e6, #d9cde6, #d5c8e6, #d1c4e7, #ccc0e7);
+	background-color: #dcd1e6\9;
 }
 .nav-btn{
 	display: none;
@@ -96,12 +110,14 @@ body.act{
 	text-align: center;
 	overflow: hidden;
 	background-color: #fff;
+	/*background-color: transparent\9;*/
 	opacity: .5;
 }
 .link img{
 	width:24px;
 	height:24px;
 	vertical-align: middle;
+	border:none;
 }
 .link>a:hover{
 	opacity: 1;
@@ -222,6 +238,7 @@ body.act{
 }
 .tab{
 	display: none;
+	display: block\9;
 	background-color: #fff;
 }
 .tab.act{
@@ -238,6 +255,7 @@ body.act{
 	background-image: -webkit-linear-gradient(to bottom, #fbc2cb, #f0bed8, #debee4, #c4bfec, #a6c1ee);
 	color:transparent;
 	color:#fff\0;
+	background-color: #dcd1e6\9;
 	-webkit-background-clip: text;
 	text-align: center;
 }
@@ -246,14 +264,22 @@ body.act{
 	margin: 0 auto 30px;
 	padding: 20px 20px 10px;
 	background-color: #fff;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19);
+	border:1px solid #eee\9;
+	border-right-width:  3px\9;
+	border-bottom-width: 3px\9;
+
+}
+.case:hover{
 	transition: all 0.5s;
 	-moz-transition: all 0.5s; 
 	-webkit-transition: all 0.5s; 
 	-o-transition: all 0.5s; 
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19);
-}
-.case:hover{
 	box-shadow:0px 10px 30px rgba(0, 0, 0, 0.19),0px 6px 10px  rgba(0, 0, 0, 0.23); 
+	-webkit-box-shadow:0px 10px 30px rgba(0, 0, 0, 0.19),0px 6px 10px  rgba(0, 0, 0, 0.23); 
+	-moz-box-shadow:0px 10px 30px rgba(0, 0, 0, 0.19),0px 6px 10px  rgba(0, 0, 0, 0.23); 
 }
 .case h4{
 	margin-bottom:15px;
@@ -329,8 +355,14 @@ body.act{
 }
 .contact{
 	position: absolute;
-   left: 50%;
-   transform: translate(-50%,0);
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 400px\9;
+    margin-left: -200px\9; 
+}
+:root .contact{
+	width: auto;
+	margin-left: 0;
 }
 .contact li{
 	font-size: 30px;

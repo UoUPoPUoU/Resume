@@ -18,15 +18,19 @@
       }
   }
   btn.onclick = function () {
-         btn.classList.toggle("on");
-         navBox.classList.toggle("act");
-         body.classList.toggle("act");
+    changeAct();
     }
   navBox.onclick = function () {
+    changeAct();
+    }
+
+  function changeAct(){
     btn.classList.toggle("on");
-    navBox.classList.toggle("act");
-    body.classList.toggle("act");
-  }
+       navBox.classList.toggle("act");
+       if(screen.width < 767){
+        body.classList.toggle("act");
+       }
+    }
 
 
 
