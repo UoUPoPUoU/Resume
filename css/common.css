@@ -463,12 +463,15 @@ body.act{
 
 	.contact{
 		position: static;
-		width: 220px;
     	margin: auto;
     	padding: 0;
     	transform: none;
-
 	}
+	:root .contact{
+		width: 220px;
+		margin-left: auto;
+	}
+
 	.contact li{
 		font-size: 20px;
 	}
