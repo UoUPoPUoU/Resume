@@ -41,6 +41,9 @@ body.act{
 	background-image: -webkit-linear-gradient(to bottom, #dcd1e6, #d9cde6, #d5c8e6, #d1c4e7, #ccc0e7);
 	background-image: linear-gradient(to bottom, #dcd1e6, #d9cde6, #d5c8e6, #d1c4e7, #ccc0e7);
 }
+.nav-btn{
+	display: none;
+}
 .re-left>h3{
 	padding: 30px 15px;
 	font-size: 30px;
@@ -366,6 +369,7 @@ body.act{
 	}
 	.nav-btn{
 		position: absolute;
+		display: block;
 	    top: 50%;
 	    transform: translate(0,-50%);
 	}
